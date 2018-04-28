@@ -2,7 +2,7 @@
 
 ## To use
 
-You need `gfortran`, `f2py2.7`, and `pythran` installed, as well as Python2.7, with numpy and scipy. We use Python2.7 because it's required by Pythran (apparently he's working on support for 3+ though). Clone the repo, and go to its directory in your terminal. Then:
+You need `gfortran`, `f2py2.7`, and `pythran` installed, as well as Python3, with numpy and scipy. Clone the repo, and go to its directory in your terminal. Then:
 
 ```
 make

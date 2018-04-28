@@ -1,12 +1,10 @@
 import sys
-if sys.version_info[0] > 2:
-    raise Exception("Use Python2.7! Unfortunately, Pythran doesn't work on Python3.")
 
 print("importing and compiling")
 import numpy as np
 from time import time
 
-import naive_pythran_pot
+import pythran_pot
 
 from fort_pot import fort_pot
 
@@ -75,7 +73,8 @@ if __name__ == "__main__":
         time_func(one_loop_pot)
         time_func(scipy_pot)
         time_func(cython_pot)
-        time_func(naive_pythran_pot.naive_pythran_pot)
+        time_func(pythran_pot.naive_pythran_pot)
+#        time_func(pythran_pot.pythran_one_loop_pot)
         time_func(fortran_two_loop_pot)
         print("")
 
